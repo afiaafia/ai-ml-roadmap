@@ -1,99 +1,106 @@
 # Python Data Types
-# -----------------
-# Python has several built-in data types for storing different kinds of values.
+
+# Integer (int)
+# Whole numbers without a decimal point.
+quantity = 10
+temperature = -5
+
+print(quantity)
+print(type(quantity))
+
+print(temperature)
+print(type(temperature))
 
 
-# 1. Integer
-age = 20
-year = 2026
+# Floating-point number (float)
+# Numbers that contain a decimal point.
+price = 49.99
+average_score = 87.5
 
-print(age)
-print(type(age))
+print(price)
+print(type(price))
 
-
-# 2. Float
-height = 5.4
-price = 99.99
-
-print(height)
-print(type(height))
+print(average_score)
+print(type(average_score))
 
 
-# 3. Complex number
-complex_number = 3 + 4j
+# String (str)
+# A sequence of characters enclosed in quotes.
+product = "Notebook"
+category = "Stationery"
 
-print(complex_number)
-print(type(complex_number))
+print(product)
+print(type(product))
 
-
-# 4. String
-name = "Afia"
-message = "Learning Python for AI and Machine Learning"
-
-print(name)
-print(type(name))
+print(category)
+print(type(category))
 
 
-# 5. Boolean
-is_student = True
+# Boolean (bool)
+# Represents either True or False.
+is_available = True
 is_completed = False
 
-print(is_student)
-print(type(is_student))
+print(is_available)
+print(type(is_available))
+
+print(is_completed)
+print(type(is_completed))
 
 
-# 6. List
-languages = ["Python", "JavaScript", "TypeScript"]
+# List (list)
+# An ordered and changeable collection of values.
+numbers = [10, 20, 30, 40]
 
-print(languages)
-print(type(languages))
+print(numbers)
+print(type(numbers))
 
 
-# 7. Tuple
-coordinates = (23.8103, 90.4125)
+# Tuple (tuple)
+# An ordered collection of values that cannot be changed.
+coordinates = (10, 20)
 
 print(coordinates)
 print(type(coordinates))
 
 
-# 8. Set
-unique_numbers = {1, 2, 3, 4, 5}
+# Dictionary (dict)
+# Stores data as key-value pairs.
+product_info = {
+    "name": "Notebook",
+    "price": 49.99,
+    "quantity": 10
+}
+
+print(product_info)
+print(type(product_info))
+
+
+# Set (set)
+# An unordered collection of unique values.
+unique_numbers = {10, 20, 30, 10}
 
 print(unique_numbers)
 print(type(unique_numbers))
 
 
-# 9. Dictionary
-student = {
-    "name": "Afia",
-    "age": 20,
-    "course": "AI & Machine Learning"
-}
-
-print(student)
-print(type(student))
-
-
-# 10. None
+# NoneType
+# None represents the absence of a value.
 result = None
 
 print(result)
 print(type(result))
 
 
-# 11. Checking multiple data types
+# Checking multiple data types
+value_1 = 100
+value_2 = 25.5
+value_3 = "Python"
+value_4 = True
+value_5 = [1, 2, 3]
 
-values = [
-    100,
-    10.5,
-    "Python",
-    True,
-    [1, 2, 3],
-    (1, 2, 3),
-    {1, 2, 3},
-    {"name": "Afia"},
-    None
-]
-
-for value in values:
-    print(value, "->", type(value))
+print(type(value_1))
+print(type(value_2))
+print(type(value_3))
+print(type(value_4))
+print(type(value_5))
